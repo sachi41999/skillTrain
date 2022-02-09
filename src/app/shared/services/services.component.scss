@@ -1,0 +1,49 @@
+.container-fluid img {
+  border-radius: 30px;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.container-fluid {
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment h1 {
+  color: darkred;
+  font-weight: bolder;
+}
+
+.container .box {
+  text-align: center;
+  margin: 4px;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container .box h3 {
+  color: brown;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .comment {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,67 @@
+.footer {
+  background-color: #000;
+  position: sticky;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  top: 100%;
+  color: white !important;
+}
+
+.footer .footer1 div .bi {
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.bi-facebook {
+  color: #3b5998;
+}
+
+.bi-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bi-whatsapp {
+  color: rgb(37, 211, 102);
+}
+
+.navbar-nav .nav-item a {
+  color: white;
+  text-decoration: underline;
+  width: 0px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer1 {
+    width: auto;
+    text-align: center;
+  }
+  .footer2 {
+    display: flex;
+    justify-content: center;
+  }
+  .footer3 {
+    width: auto;
+    text-align: center;
+  }
+  .footer4 {
+    display: flex;
+    justify-content: center;
+  }
+}

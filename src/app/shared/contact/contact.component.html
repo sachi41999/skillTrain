@@ -1,0 +1,119 @@
+<div class="container primary-box mt-4 my-4 p-4">
+  <div class="container container1">
+    <form
+      [formGroup]="joinerDetail"
+      class="row g-3 needs-validation"
+      (ngSubmit)="display()"
+      novalidate
+    >
+      <div class="mb-3 form-group">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="joinerName"
+          id="name"
+          required
+          autocomplete="of"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          formControlName="joinerPhone"
+          required
+          autocomplete="of"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          formControlName="joinerEmail"
+          aria-describedby="emailHelp"
+          required
+          autocomplete="of"
+        />
+        <div id="emailHelp" class="form-text text-danger">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="dob" class="form-label">Date of birth</label>
+        <input
+          type="date"
+          formControlName="joinerDOB"
+          class="form-control"
+          id="dob"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="gender" class="form-label">Gender</label>
+        <select
+          id="gender"
+          formControlName="joinerGender"
+          class="form-select"
+          required
+        >
+          <option>choose</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="stream" class="form-label">Stream</label>
+        <input
+          type="text"
+          class="form-control"
+          id="stream"
+          formControlName="joinerStream"
+          required
+          autocomplete="of"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="resume" class="form-label">Resume</label>
+        <input
+          type="file"
+          formControlName="joinerResume"
+          class="form-control"
+          id="resume"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail4" class="form-label">Passing Year</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail4"
+          formControlName="joinerPY"
+          required
+          autocomplete="of"
+        />
+      </div>
+
+      <div class="mb-3 form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="exampleCheck1"
+          required
+        />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+// Brand css
+
+.navbar-brand img {
+  width: 160px;
+  height: 60px;
+}
+
+.navbar-toggler-icon {
+  color: red;
+}
+
+.nav-item {
+  font-weight: bolder;
+}
+
+.navbar-dark .navbar-nav .nav-link.active-link {
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: grey;
+}
