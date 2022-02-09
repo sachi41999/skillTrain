@@ -1,4 +1,4 @@
-const epresss=require('express');
+const express=require('express');
 const path=require('path');
 
 const app=express();
@@ -9,4 +9,6 @@ app.get('/*',(req,res)=>{
     res.sendFile('index.html',{root:'dist/skill-oopz'})
 });
 
-app.listen(process.env.PORT||8000);
+const port =process.env.PORT||8000;
+
+app.listen(port);
